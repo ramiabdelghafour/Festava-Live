@@ -586,6 +586,14 @@ strong {
 /*---------------------------------------
   ARTISTS              
 -----------------------------------------*/
+/* RAMI- adding artists section */
+.artists-section {
+  background-image: url('../images/artists-section.jpg');
+  background-color: #242424;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .artists-thumb {
   position: relative;
   overflow: hidden;
@@ -644,7 +652,7 @@ strong {
   SCHEDULE              
 -----------------------------------------*/
 .schedule-section {
-  background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
+  background-image: url('../images/schedule-section.jpg');
   background-color: #242424;
   background-repeat: no-repeat;
   background-position: center;
