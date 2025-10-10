@@ -1,0 +1,126 @@
+
+section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../images/nainoa-shizuru-unsplash-blur.jpg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+  text-align: center;
+  color: #ee5007;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ee5007;
+  outline: none;
+  box-shadow: 0 0 5px rgba(238, 80, 7, 0.3);
+}
+
+button {
+  background-color: #ee5007;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: #cc4406;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Large screens (≤1439px) */
+@media (max-width: 1439px) {
+  section .contact-container {
+    max-width: 700px;
+    padding: 35px;
+  }
+
+  section h1 {
+    font-size: 30px;
+  }
+}
+
+/* Tablets (≤1023px) */
+@media (max-width: 1023px) {
+  section {
+    padding: 60px 20px;
+  }
+
+  section .contact-container {
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  section h1 {
+    font-size: 26px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* Phones (≤767px) */
+@media (max-width: 767px) {
+  section {
+    padding: 50px 15px;
+  }
+
+  section .contact-container {
+    padding: 25px;
+  }
+
+  section h1 {
+    font-size: 22px;
+  }
+
+  input,
+  textarea {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
