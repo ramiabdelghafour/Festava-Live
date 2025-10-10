@@ -1,0 +1,147 @@
+/* ---------- Pricing Page Styles ---------- */
+
+/* ---------- Section Base ---------- */
+section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/princing-section-blur.jpg");
+  background-color: #242424;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  padding-top: 20px;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #ee5007; /* secondary color */
+}
+
+p.subtitle {
+  color: #ffffff; /* muted text */
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* ---------- Pricing Cards ---------- */
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.plan {
+  background: #ffffff; /* card color */
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.plan h2 {
+  color: #ee5007; /* secondary color */
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+}
+
+.features {
+  list-style: none;
+  text-align: left;
+  margin-top: 1.2rem;
+  color: #717275; /* muted text */
+  line-height: 1.8;
+  
+}
+
+.features li::before {
+  content: "✔ ";
+  color: #ee5007; /* secondary color */
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #ee5007; /* secondary color */
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #f8a72e;
+}
+
+/* ---------- Highlighted Plan ---------- */
+.plan.vip {
+  border: 2px solid #ee5007;
+  background: #f2f0ff;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+@media (max-width: 1439px) {
+  .pricing-container {
+    max-width: 900px;
+    gap: 1.2rem;
+  }
+  .plan {
+    padding: 2rem 1.2rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .pricing-container {
+    max-width: 700px;
+    gap: 1rem;
+  }
+  .plan {
+    padding: 1.5rem 1rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing-container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    gap: 1.5rem;
+  }
+  .plan {
+    padding: 1.2rem 0.8rem;
+    font-size: 0.98rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+  .btn {
+    width: 100%;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+  }
+}
