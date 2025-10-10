@@ -1,11 +1,10 @@
-
 section {
   padding: 80px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("../images/nainoa-shizuru-unsplash-blur.jpg");
+  background-image: url("../images/contact-section.jpg");
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
@@ -58,16 +57,12 @@ button {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  
 }
 
 button:hover {
   background-color: #cc4406;
 }
 
-/* ---------- Responsive ---------- */
-
-/* Large screens (≤1439px) */
 @media (max-width: 1439px) {
   section .contact-container {
     max-width: 700px;
@@ -79,7 +74,6 @@ button:hover {
   }
 }
 
-/* Tablets (≤1023px) */
 @media (max-width: 1023px) {
   section {
     padding: 60px 20px;
@@ -100,7 +94,6 @@ button:hover {
   }
 }
 
-/* Phones (≤767px) */
 @media (max-width: 767px) {
   section {
     padding: 50px 15px;

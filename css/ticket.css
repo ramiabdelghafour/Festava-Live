@@ -1,0 +1,136 @@
+section {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/nainoa-shizuru-unsplash-blur.jpg");
+  background-color: #242424;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ee5007;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 30px;
+  align-items: start;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.event-card {
+  padding: 30px 200px 30px 200px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.event-date,
+.event-venue {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.features {
+  list-style: none;
+  margin-top: 12px;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.event-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.buy-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.buy-form input[type="text"],
+.buy-form input[type="email"],
+.buy-form input[type="number"],
+.buy-form select,
+.buy-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: #111827;
+  background-color: #fff;
+  transition: border 0.2s;
+}
+
+.btn {
+  width: 100%;
+  display: inline-block;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ee5007, #ff7843);
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 880px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .event-card {
+    flex-direction: row;
+  }
+  .event-image {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+  .card {
+    padding: 20px;
+  }
+}

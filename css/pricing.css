@@ -1,4 +1,3 @@
-
 section {
   padding-top: 100px;
   padding-bottom: 120px;
@@ -20,13 +19,12 @@ h1 {
   color: #ee5007;
 }
 
-p.subtitle {
-  color: #ffffff; 
+.subtitle {
+  color: #ffffff;
   margin-bottom: 2rem;
   text-align: center;
   max-width: 600px;
 }
-
 
 .pricing-container {
   display: grid;
@@ -66,14 +64,13 @@ p.subtitle {
   list-style: none;
   text-align: left;
   margin-top: 1.2rem;
-  color: #717275; 
+  color: #717275;
   line-height: 1.8;
-  
 }
 
 .features li::before {
   content: "✔ ";
-  color: #ee5007; 
+  color: #ee5007;
 }
 
 .btn {
@@ -91,13 +88,6 @@ p.subtitle {
   background: #f8a72e;
 }
 
-
-.plan.vip {
-  border: 2px solid #ee5007;
-  background: #f2f0ff;
-}
-
-
 @media (max-width: 1439px) {
   .pricing-container {
     max-width: 900px;
@@ -114,7 +104,7 @@ p.subtitle {
     gap: 1rem;
   }
   .plan {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem; 
   }
   h1 {
     font-size: 1.7rem;
@@ -122,6 +112,9 @@ p.subtitle {
 }
 
 @media (max-width: 767px) {
+  section {
+    padding-top: 200px;
+  }
   .pricing-container {
     grid-template-columns: 1fr;
     max-width: 400px;
