@@ -40,9 +40,6 @@ h1 {
   gap: 20px;
 }
 
-.event-info {
-  flex: 1;
-}
 
 .event-title {
   font-size: 24px;
@@ -98,10 +95,9 @@ h1 {
 
 .btn {
   width: 100%;
-  display: inline-block;
   padding: 14px 18px;
   border-radius: 10px;
-  background: linear-gradient(90deg, #ee5007, #ff7843);
+  background: #ff7843;
   color: #fff;
   border: none;
   font-weight: 700;
@@ -112,13 +108,10 @@ h1 {
 
 .btn:hover {
   opacity: 0.9;
+  background: #ff3300;
 }
 
-.btn:active {
-  transform: translateY(1px);
-}
-
-@media (max-width: 880px) {
+@media (max-width: 767px) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -131,6 +124,6 @@ h1 {
     font-size: 28px;
   }
   .card {
-    padding: 20px;
+    padding: 50px;
   }
 }
